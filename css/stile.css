@@ -117,13 +117,20 @@ a
 
         /* comandi pep i blocchi float, categorie */
 
-article
+section
 {
     width: 80%;
     margin:auto;
 }
 
-.row , .row1
+.clearfix
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row , .row1 , .row2
 {
     width: 100%;
     float: left;
@@ -142,4 +149,47 @@ article
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
+}
+
+.row2 div
+{
+  float: left;
+  margin-right: 1%;
+  width: 19%;
+  height: 30vh;
+  background-color: rgb(55, 4, 61);
+  text-align: center;
+  line-height: 30vh;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  border-radius: 50%;
+  content: "Personaggio";
+
+}
+
+
+a div:hover
+{
+  background-color: rgba(30, 14, 124, 0.5);
+}
+
+
+
+
+.row2:last-child
+{
+  margin-right: 0px;
+}
+
+.rombo {
+  background-color: royalblue;
+	width:100px;
+	height:100px; 
+	-moz-transform:rotate(45deg) skew(10deg, 10deg);
+	-webkit-transform:rotate(45deg) skew(10deg, 10deg);
+	-ms-transform:rotate(45deg) skew(10deg, 10deg);
+	-o-transform:rotate(45deg) skew(10deg, 10deg);
+	transform:rotate(45deg) skew(10deg, 10deg);
+	background:orange;
 }
